@@ -1,0 +1,26 @@
+Start
+Input a sentence character by character (end with a period ".").
+
+Initialize:
+    - length = 0 (to count the total number of characters)
+    - words = 0 (to count the number of words)
+    - vowels = 0 (to count the number of vowels)
+
+WHILE (character != '.'):
+    Increment length by 1
+    IF (character == ' ' AND previous_character != ' '):
+        Increment words by 1
+    END_IF
+    IF (character is a vowel ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')):
+        Increment vowels by 1
+    END_IF
+    Read the next character
+END_WHILE
+
+Increment words by 1 (to count the last word before the period)
+
+Output:
+    - "Length of sentence: ", length
+    - "Number of words: ", words
+    - "Number of vowels: ", vowels
+End
